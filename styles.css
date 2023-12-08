@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+.info .info1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 34%;
+}
+.info .info2 {
+    display: flex;
+    height: auto;
+    flex: 1;
+}
+.info .info2 img {
+    height: auto;
+    width: 66%;
+    flex: 1;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    height: 125px;
+    padding: 15px 0;
+    flex: 1;
+    flex-basis: auto;
+    width: 100%; 
+
+}
+
+.header ul {
+    display: flex;
+    font-size: 25px;
+    flex-wrap: wrap;
+
+
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    gap: 30px;
+}
+
+.header .logo {
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+}
+
+
+.header ul a {
+    text-decoration: none;
+}
+
+.header,
+.info,
+.content1,
+.content2,
+.footer {
+    width: 100%; /* Genişliği yüzde olarak ayarla */
+    max-width: 100%; /* Maksimum genişliği yüzde olarak ayarla */
+}
+
+.carpici {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tanitim {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.ulasin1 {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 23px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bilgibaslik {
+    text-align: center;
+    font-size: 45px;
+    padding: 50px;
+}
+
+.resimlibilgi {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10%;
+    justify-content: center;
+}
+
+.resimlibilgi .bilgiler {
+    width: 30%;
+    height: auto;
+    gap: 10%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    flex-basis: auto;
+    font-size: 20px;
+
+}
+
+.resimlibilgi .bilgiler img {
+    width: 40%;
+    height: auto;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.genelbilgibaslik {
+    text-align: center;
+    font-size: 45px;
+    padding: 50px;
+}
+
+.drtanitim {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10%;
+    justify-content: center;
+}
+
+.drtanitim .genelbilgi {
+    width: 30%;
+    height: auto;
+    gap: 10%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    flex-basis: auto;
+    font-size: 20px;
+
+}
+
+.drtanitim .genelbilgi img {
+    width: 80%;
+    height: auto;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.footer .samsunbilgi , 
+.footer .kayseribilgi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 40%;
+}
+.footer .samsunbilgi div ,
+.footer .kayseribilgi div {
+    display: flex;
+    line-height: 25px;
+}
+
+.footer .samsunbilgi .samsun ,
+.footer .kayseribilgi .kayseri {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.footer .samsunbilgi img , 
+.footer .kayseribilgi img {
+    width: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        padding: 1% 0px;
+
+    }
+    .header .links {
+        font-size: 16px;
+        justify-content: space-between;
+        display: flex; 
+    }
+
+
+    .header li {
+        text-align: center; 
+    }
+    .header .logo {
+        font-size: 20px;
+        height: 55px;
+        justify-content: center;
+        
+
+    }
+
+    .header .logo img {
+        height: 60%;
+        width: auto;
+        justify-content: center;
+    }
+
+    /* .header ul {
+
+    }*/
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info2 {
+        order: -1;
+    }
+    .info .info1 {
+        width: 100%;
+    }
+
+    .carpici {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .tanitim {
+        padding: 15px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .ulasin1 {
+        font-weight: bold;
+        padding: 15px;
+        font-size: 23px;
+    }
+
+    .bilgibaslik {
+        font-size: 40px;
+    }
+
+    .genelbilgibaslik {
+        font-size: 33px;
+    }
+
+    .footer .samsunbilgi, 
+    .footer .kayseribilgi {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+  } 
+
