@@ -205,7 +205,8 @@ body {
 
 .footer .samsunbilgi img , 
 .footer .kayseribilgi img {
-    width: 5%;
+    width: 10%;
+    height: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -280,13 +281,17 @@ body {
         font-size: 40px;
     }
 
+    .resimlibilgi .bilgiler {
+        font-size: 15px;
+    }
+
     .genelbilgibaslik {
         font-size: 33px;
     }
 
     .footer .samsunbilgi, 
     .footer .kayseribilgi {
-        font-size: 12px;
+        font-size: 10px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
